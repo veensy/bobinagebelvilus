@@ -11,7 +11,7 @@ export const Partners = () => (
       <LeroySomer width='172px' height='48px' />
       <SewUsocome width='172px' height='48px' />
       <Abb width='172px' height='48px' />
-      <BartecVarnost width='372px' height='48px' />
+      <BartecVarnost width='272px' height='48px' />
     </div>
   </section>
 );

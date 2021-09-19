@@ -25,6 +25,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
   }
 }
 
@@ -43,6 +44,7 @@
     height: calc(100vh);
     justify-content: flex-start;
     margin: 0;
+    z-index: 1000;
 
     .closeButton {
       position: absolute;

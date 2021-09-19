@@ -5,6 +5,7 @@ import { COMPANY_TEXT } from '../../pages/Company/constants';
 import { Location } from '../../components/Contacts/components/Location/Location';
 import { PhoneNumber } from '../../components/Contacts/components/PhoneNumber/PhoneNumber';
 import { Schedule } from '../../components/Contacts/components/Schedule/Schedule';
+import { Mail } from '../Contacts/components/Mail/Mail';
 import { NavList } from '../Nav/components/NavList';
 import { NavOptionsInt } from '../Nav/constants';
 
@@ -46,12 +47,14 @@ export const Footer = ({ pageToDisplay, selectedPage }: PageToDisplay) => (
         <div className={styles.infos}>
           <Location primaryColor={WHITE} secondaryColor={WHITE} />
           <PhoneNumber primaryColor={WHITE} secondaryColor={WHITE} />
+          <Mail primaryColor={WHITE} secondaryColor={WHITE} />
           <Schedule primaryColor={WHITE} secondaryColor={WHITE} />
         </div>
       </div>
-      <p className={styles.policy}>
+    </section>
+
+    <p className={styles.policy}>
         © {new Date().getFullYear()} BOBINAGE BELVILUS. Tous droits réservés
       </p>
-    </section>
   </footer>
 );
