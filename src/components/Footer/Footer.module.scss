@@ -9,18 +9,23 @@
   flex-wrap: wrap;
   .brand,
   .contact,
-  .nav {
+  .nav,
+  .iframe {
     max-width: 318px;
     padding: 16px;
     h2,
     p,
     span,
-    button {
+    button,
+    a {
       color: #fff;
     }
     h2 {
       margin-bottom: 42px;
     }
+  }
+  .iframe {
+    align-self: center;
   }
   .brandContainer {
     display: flex;

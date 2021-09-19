@@ -6,18 +6,16 @@ interface MailInt {
   secondaryColor?: string;
 }
 
-export const Mail = ({
-  primaryColor,
-  secondaryColor,
-}: MailInt) => (
+const addressMail = 'jimmybelvilus@gmail.com';
+
+export const Mail = ({ primaryColor, secondaryColor }: MailInt) => (
   <div className={styles.mail}>
-    <MailIcon
-      primaryColor={primaryColor}
-      secondaryColor={secondaryColor}
-    />
+    <MailIcon primaryColor={primaryColor} secondaryColor={secondaryColor} />
     <div className={styles.mailLabelAndText}>
       <span className={styles.mailLabel}>Email</span>
-      <span className={styles.mailText}>Jimmybelvilus@gmail.com</span>
+      <a href={`mailto:${addressMail}`} className={styles.mailText}>
+        {addressMail}
+      </a>
     </div>
   </div>
 );
