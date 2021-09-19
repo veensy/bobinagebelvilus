@@ -43,7 +43,7 @@ export const Footer = ({ pageToDisplay, selectedPage }: PageToDisplay) => (
         </div>
       </div>
       <div className={styles.contact}>
-        <h2>Contact</h2>
+        <h2>CONTACT</h2>
         <div className={styles.infos}>
           <Location primaryColor={WHITE} secondaryColor={WHITE} />
           <PhoneNumber primaryColor={WHITE} secondaryColor={WHITE} />
