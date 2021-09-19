@@ -1,0 +1,17 @@
+.location {
+  display: flex;
+  align-items: center;
+  margin:4px;
+
+  .addressLocation {
+    display: grid;
+    margin-left: 8px;
+  }
+  .locationLabel {
+    color: #388dc5;
+    margin-bottom: 4px;
+  }
+  .locationText {
+    color: #035a94;
+  }
+}

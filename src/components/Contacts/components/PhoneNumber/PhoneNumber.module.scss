@@ -1,0 +1,16 @@
+.phoneNumber {
+  display: flex;
+  align-items: center;
+  margin:4px;
+  .phoneNumberLabelAndText {
+    display: grid;
+    margin-left: 8px;
+  }
+  .phoneNumberLabel {
+    color: #388dc5;
+    margin-bottom: 4px;
+  }
+  .phoneNumberText {
+    color: #035a94;
+  }
+}

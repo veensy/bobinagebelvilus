@@ -1,0 +1,83 @@
+.nav {
+  display: flex;
+  background-color: #388dc5;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;  
+
+  button {
+    padding: 16px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .active {
+    background-color: #035a94;
+  }
+  button:hover {
+    color: #fff;
+    background-color: #035a94;
+  }
+  .navLink {
+    font-size: 18px;
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.burgerButton {
+  width: 100%;
+}
+
+@media only screen and (max-width: 426px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100vh);
+    justify-content: flex-start;
+    margin: 0;
+
+    .closeButton {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      padding: 4px;
+      width: 24px;
+      height: 24px;
+      border-radius: 16px;
+    }
+
+    svg {
+      width: 16px;
+    }
+    &.open {
+      animation: open 2s forwards;
+    }
+    @keyframes open {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    &.close {
+      animation: close 2s forwards;
+    }
+    @keyframes close {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+}

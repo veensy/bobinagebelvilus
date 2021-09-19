@@ -1,0 +1,49 @@
+.text {
+  color: #2384c6;
+}
+.commonButtonType {
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+}
+.button {
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 25%) 0 4px 12px 0;
+  padding: 12px 24px;
+  background-color: #388dc5;
+  font-weight: 600;
+  color: #fff;
+  margin: 4px;
+}
+
+.button:hover {
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 25%) 0 4px 12px 0;
+  padding: 12px 24px;
+  background-color: #035a94;
+  border: none;
+  color: #fff;
+  margin: 4px;
+}
+
+.link {
+  background-color: transparent;
+  color: #388dc5;
+  font-size: 18px;
+}
+.link:hover {
+  color: #035a94;
+}
+
+.icon {
+  background-color: #035a94;
+  padding: 12px 24px;
+  display: flex;
+
+  &.center {
+    justify-content: center;
+  }
+  &.right {
+    justify-content: flex-end;
+  }
+}

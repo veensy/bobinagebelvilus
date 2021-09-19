@@ -1,0 +1,17 @@
+.schedule {
+    display: flex;
+    align-items: center;
+    margin:4px;
+    .scheduleLabelAndText {
+      display: grid;
+      margin-left: 8px;
+    }
+    .scheduleLabel {
+      color: #388dc5;
+      margin-bottom: 4px;
+    }
+    .scheduleText {
+      color: #035a94;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+.preHeader {
+  padding: 16px 192px;
+  display: flex;
+  justify-content: space-around ;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+header {
+  box-shadow: rgb(0 0 0 / 25%) 0 4px 12px 0;
+  background-color: #d5d6d8;
+}
+
+@media only screen and (max-width:1440px) {
+    .preHeader {
+      padding: 16px;
+    }
+  }

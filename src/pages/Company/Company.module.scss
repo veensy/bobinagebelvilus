@@ -1,0 +1,29 @@
+.company{
+    max-width: 520px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding:16px;
+    box-shadow: rgb(0 0 0 / 25%) 0 4px 12px 0;
+    border-radius: 6px;
+    h2{
+        color:#035a94;
+        margin-bottom: 64px;
+    }
+    svg{
+        float: right;
+        width: 48px;
+    }
+    p{
+        margin-bottom:32px;
+    }
+    .divider{
+        margin-top: 64px;
+        border: 1px solid #035a94;
+        display: flex;
+    }
+    p:last-child{
+        
+        color:#388dc5;
+    }
+
+}

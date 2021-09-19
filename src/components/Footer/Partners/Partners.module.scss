@@ -1,0 +1,17 @@
+.partners {
+  background-color: #d5d6d8;
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #035a94;
+    padding: 16px;
+  }
+  .logos{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin:24px;
+      gap:16px;
+  }
+}

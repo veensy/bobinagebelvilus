@@ -1,0 +1,42 @@
+.brandWapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  svg{
+    width: 72px;
+    margin: 0 auto;
+  }
+
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  
+  .brandText {
+    font-size: 24px;
+    font-weight: 600;
+    color: #035a94;
+  }
+  .brandSubText{
+    color: #388dc5;
+  }
+}
+ul {
+  margin: 0;
+  padding-left: 16px;
+  color: #388dc5;
+  li::marker{
+    color: #035a94;
+  }
+}
+
+@media only screen and (max-width: 733px) {
+  ul{
+      display:none;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width:769px){
+
+}

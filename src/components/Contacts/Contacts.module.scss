@@ -1,0 +1,25 @@
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:8px;
+
+    .separator{
+        background-color:#388dc5;
+        width:1px;
+        height:60%;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contacts{
+        justify-content: start;
+    } 
+}
+
+@media only screen and (max-width: 733px) {
+    .separator{
+        display:none;
+    }
+}

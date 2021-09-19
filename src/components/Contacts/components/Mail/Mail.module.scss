@@ -1,0 +1,17 @@
+.mail {
+    display: flex;
+    align-items: center;
+    margin:4px;
+    .mailLabelAndText {
+      display: grid;
+      margin-left: 8px;
+    }
+    .mailLabel {
+      color: #388dc5;
+      margin-bottom: 4px;
+    }
+    .mailText {
+      color: #035a94;
+    }
+  }
+  
