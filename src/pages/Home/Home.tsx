@@ -1,5 +1,5 @@
 import { Card } from '../../components/Card/Card';
-import about from '../../assets/pancarte.png';
+import { Advertising } from '../../components/Advertising/Advertising';
 import moteur from '../../assets/catalogue/img_1.jpeg';
 import bobinage from '../../assets/catalogue/img_5.jpeg';
 
@@ -14,10 +14,6 @@ interface HomeInt {
 }
 
 export const Home = ({ onClick }: HomeInt) => {
-  const image = {
-    url: about,
-    alt: 'pancarte',
-  };
   const catalogueImg = {
     url: moteur,
     alt: 'moteur',
@@ -28,23 +24,26 @@ export const Home = ({ onClick }: HomeInt) => {
   };
   const readMore = `EN SAVOIR PLUS  >`;
   const cards = [
-    { header: SOCIÉTÉ, text: COMPANY_TEXT, image, readMore },
+    { header: SOCIÉTÉ, text: COMPANY_TEXT, readMore, },
     { header: CATALOGUE, text: CATALOGUE_TEXT, image: catalogueImg, readMore },
     { header: EXPERTISE, text: EXPERTISE_TEXT, image: bobinageImg, readMore },
   ];
 
   return (
-    <div className={styles.cards}>
-      {cards.map(({ header, text, image, readMore }) => (
-        <Card
-          header={header}
-          text={text}
-          image={image}
-          readMore={readMore}
-          onClick={onClick}
-          key={`home-${header}`}
-        />
-      ))}
-    </div>
+    <>
+      <Advertising />
+      <div className={styles.cards}>
+        {cards.map(({ header, text, image, readMore }) => (
+          <Card
+            header={header}
+            text={text}
+            image={image}
+            readMore={readMore}
+            onClick={onClick}
+            key={`home-${header}`}
+          />
+        ))}
+      </div>
+    </>
   );
 };

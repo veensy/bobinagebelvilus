@@ -18,6 +18,7 @@ export const PhoneNumber = ({
     <div className={styles.phoneNumberLabelAndText}>
       <span className={styles.phoneNumberLabel}>Téléphone</span>
       <a href="tel:0590252401" className={styles.phoneNumberText}>0590 25 24 01</a>
+      <a href="tel:0690670665" className={styles.phoneNumberText}>0690 67 06 65</a>
     </div>
   </div>
 );

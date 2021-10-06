@@ -12,7 +12,8 @@ export const Brand = () => (
     <ul >
         <li>Bobinage de moteurs electriques</li>
         <li>Maintenance industrielle</li>
-        <li>Compresseurs</li>
+        <li>Pompes et Compresseurs</li>
+        <li>Groupes électrogènes</li>
       </ul>
   </div>
 );

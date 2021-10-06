@@ -1,5 +1,7 @@
+import { BrandShort } from '../Brand/BrandShort';
 import { Button } from '../Button/Button';
 import { BUTTON_TYPE } from '../Button/constants';
+import { SOCIÉTÉ } from '../Nav/constants';
 
 import styles from './Card.module.scss';
 
@@ -12,7 +14,8 @@ interface CardInt {
 }
 export const Card = ({ header, image, text, readMore, onClick }: CardInt) => (
   <div className={styles.card}>
-    {image?.url && <img src={image.url} alt={image.alt} />}
+    {(image?.url && header !== SOCIÉTÉ  )&& <img src={image.url} alt={image.alt} />}
+    {header === SOCIÉTÉ && <BrandShort/>}
     {header && (
       <>
         <h2>{header}</h2>

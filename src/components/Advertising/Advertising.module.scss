@@ -1,0 +1,59 @@
+.advertisingContainer {
+    display: flex;
+    background-color: #035a94;
+    padding:0 64px;
+    width: fit-content;
+    margin: 32px auto;
+    .advertising {
+        padding: 16px;
+        margin: 0 auto;
+        position: relative;
+        min-height: 200px;
+        min-width: 520px;
+    }
+    .brandName {
+        color: #fff;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    li {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    ::marker {
+        color: #388dc5;
+        font-size: 1.5em;
+    }
+    .listAndContact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact {
+        text-align: center;
+        background-color: #937278;
+        color: #fff;
+        width: fit-content;
+        padding: 8px;
+        transform: rotate(-20deg);
+        height: fit-content;
+        margin-left: -102px;
+        margin-top: 32px;
+        h4,
+        p {
+            margin: 0;
+            font-weight: 600;
+        }
+    }
+    svg {
+        margin-left: 16px;
+        width: 32px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .advertisingContainer {
+        display: none;
+    }
+}
