@@ -9,7 +9,7 @@ export const Brand = () => (
       <span className={styles.brandText}>BOBINAGE BELVILUS</span>
       <span className={styles.brandSubText}>Notre excellence à votre service</span>
     </div>
-    <ul >
+    <ul className={styles.listBrand}>
         <li>Bobinage de moteurs electriques</li>
         <li>Maintenance industrielle</li>
         <li>Pompes et Compresseurs</li>
