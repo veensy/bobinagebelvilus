@@ -1,0 +1,123 @@
+.catalogue {
+  max-width: 520px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: rgb(0 0 0 / 25%) 0 4px 12px 0;
+  border-radius: 6px;
+  h2 {
+    color: #035a94;
+    margin-bottom: 64px;
+  }
+  svg {
+    float: right;
+    width: 48px;
+  }
+  p {
+    margin-bottom: 32px;
+  }
+  .divider {
+    margin-top: 64px;
+    border: 1px solid #035a94;
+    display: flex;
+  }
+  p:last-child {
+    color: #388dc5;
+  }
+
+  .catalogueImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    .imgContainer {
+      position: relative;
+      cursor: zoom-in;
+      border: none;
+    }
+    .img {
+      display: block;
+      max-width: 430px;
+      max-height: 200px;
+      width: auto;
+      height: auto;
+    }
+    .small {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 24px;
+    }
+  }
+
+  .modal {
+    display: none;
+    z-index: 1;
+    display: none;
+    padding-top: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .close {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background-color: #035a94;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100000;
+    justify-content: center;
+    padding: 6px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    top: 78px;
+    right: 24px;
+  }
+  .smallZoom {
+    bottom: 48px;
+    z-index: 100000;
+    right: 24px;
+    position: fixed;
+  }
+  .modal_content {
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}

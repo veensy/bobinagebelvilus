@@ -1,0 +1,45 @@
+.expertise {
+    max-width: 520px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 16px;
+    box-shadow: rgb(0 0 0 / 25%) 0 4px 12px 0;
+    border-radius: 6px;
+    h2 {
+        color: #035a94;
+        margin-bottom: 64px;
+    }
+    h4{
+        margin: 32px 0;
+    }
+    svg {
+        float: right;
+        width: 48px;
+    }
+
+    .divider {
+        margin-top: 64px;
+        border: 1px solid #035a94;
+        display: flex;
+    }
+    p:last-child {
+        color: #388dc5;
+    }
+
+    ::marker {
+        content: "»";
+        font-size: 1em;
+    }
+
+    li {
+        padding-inline-start: 1ch;
+    }
+
+    ul {
+        color: black;
+        align-items: center;
+    }
+    .list {
+        margin: 24px 0 32px;
+    }
+}
