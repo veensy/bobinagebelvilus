@@ -18,7 +18,7 @@ export const Expertise = () => {
         <br />
         <ul>
           <li>Contrôle de l'isolement</li>
-          <li>Contrôle des valeurs chimiques</li>
+          <li>Contrôle des valeurs ohmiques</li>
           <li>Contrôle de la rigidité diélectrique</li>
         </ul>
       </ul>
