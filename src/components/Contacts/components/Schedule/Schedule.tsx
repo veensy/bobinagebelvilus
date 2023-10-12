@@ -12,7 +12,7 @@ export const Schedule = ({ primaryColor, secondaryColor }: ScheduleInt) => (
     <div className={styles.scheduleLabelAndText}>
       <span className={styles.scheduleLabel}>HORAIRE D'OUVERTURE</span>
       <span className={styles.scheduleText}>
-        LUN - VEN : 7:30-16:00 en continue
+        LUN - VEN : 7:30-15:00 en continue
       </span>
     </div>
   </div>
